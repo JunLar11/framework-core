@@ -1,0 +1,42 @@
+{
+  "name": "junlar11/chomsky",
+  "description": "The brand new Chomsky framework, a PHP MVC framework designed to fulfill any necessities.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Chomsky\\": "src/",
+      "App\\": "app/"
+    }
+  },
+  "scripts": {
+    "tests": "phpunit --color=always --testdox -v tests/",
+    "csfixer": "php-cs-fixer fix --diff"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Chomsky\\Tests\\": "tests"
+    },
+    "files": [
+      "src/Helpers/app.php",
+      "src/Helpers/http.php",
+      "src/Helpers/string.php",
+      "src/Helpers/session.php",
+      "src/Helpers/auth.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Juan Larios",
+      "email": "juanjosedejesuslarios@gmail.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "friendsofphp/php-cs-fixer": "^3.12"
+  },
+  "require": {
+    "vlucas/phpdotenv": "^5.5",
+    "symfony/console": "^6.2"
+  }
+}
