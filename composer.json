@@ -6,15 +6,6 @@
   "autoload": {
     "psr-4": {
       "Chomsky\\": "src/"
-    }
-  },
-  "scripts": {
-    "tests": "phpunit --color=always --testdox -v tests/",
-    "csfixer": "php-cs-fixer fix --diff"
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Chomsky\\Tests\\": "tests"
     },
     "files": [
       "src/Helpers/app.php",
@@ -23,6 +14,16 @@
       "src/Helpers/session.php",
       "src/Helpers/auth.php"
     ]
+  },
+  "scripts": {
+    "tests": "phpunit --color=always --testdox -v tests/",
+    "csfixer": "php-cs-fixer fix --diff"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Chomsky\\Tests\\": "tests"
+    }
+    
   },
   "authors": [
     {
